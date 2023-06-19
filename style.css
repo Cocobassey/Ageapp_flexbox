@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    max-width: 1440px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 650px;
+    height: 450px;
+    padding: 25px;
+    position: relative;
+    bottom: 90px;
+    background-color:hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 94%);
+    border-radius: 5px 5px 50px 5px;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: italic;
+    /* margin: 10px 30px; */
+    padding: 10px 25px 10px 30px;
+    text-align: left;
+    /* position: relative;
+    left: 20%;
+    top:20px; */
+}
+
+.day_label {
+    margin-right: 35px;
+    margin-left: 25px;
+}
+
+.month_label {
+    margin-right: 25px;
+    margin-left: 40px;
+}
+
+.year_label {
+    margin-left: 30px;
+}
+
+
+input {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 10px 20px 50px 15px; 
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    position: relative;
+    left: 40px;
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+    outline: none;
+}
+
+input:active {
+    cursor: pointer;
+}
+
+input:hover {
+    border: 1px solid  hsl(259, 100%, 65%);
+}
+
+hr {
+    height: 1px;
+    background-color:  hsl(0, 0%, 86%);
+    border: none;
+    margin: 0;
+    /* position: relative;
+    top: 50px; */
+}
+
+img {
+    width: 50px;
+    position: relative;
+    left: 520px;
+    bottom: 25px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: hsl(259, 100%, 65%);
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.age_counter {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 900;
+    color: hsl(0, 0%, 8%);
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    /*
+    text-align: left; */
+}
+
+.counter {
+    color: hsl(259, 100%, 65%);
+    font-size: 70px;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: hsl(0, 0%, 86%);
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+     }
+
+     label {
+        position: relative;
+        right: 15px;
+        padding: 10px 10px 10px 10px;
+     }
+
+     .day_label {
+        margin-right: 35px;
+        margin-left: 5px;
+     }
+
+     .month_label {
+        margin-right: 20px;
+        margin-left: 15px;
+     }
+
+     .year_label {
+        margin-left: 5px;
+     }
+
+     input {
+        width: 25%;
+        padding: 10px 15px;
+        margin: 7px 7px 40px 7px; 
+        font-size: 16px;
+        position: relative;
+        left: -5px;
+     }
+
+     img {
+       position: relative;
+        left: 40%;
+        bottom: 15px;
+        width: 50px;
+    }
+
+    hr {
+        position: relative;
+        top: 10px;
+    }
+
+    .age_counter {
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        top: 10px;
+        right: 60px;
+    }
+
+    h3, .counter {
+        font-size: 60px;
+    }
+
+}
